@@ -13,13 +13,33 @@
 
     .flatpickr-calendar.animate.open {
 
-        width: 20.5vw;
+        /*        width: 20.5vw;*/
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .flatpickr-current-month .numInputWrapper {
+        width: 3vw;
+    }
+}
+
+@media all and (max-width: 425px) {
+    .flatpickr-current-month .numInputWrapper {
+        width: 6.6vw;
     }
 }
 
 @media all and (max-width:414px) {
     .flatpickr-months .flatpickr-month {
         height: 5.2vw;
+    }
+
+    .flatpickr-current-month input.cur-year {
+        padding: 0 1.6vw 0.1vw;
+    }
+
+    .flatpickr-current-month input.cur-year {
+        line-height: 1.3;
     }
 
     .flatpickr-months .flatpickr-prev-month,
@@ -39,14 +59,17 @@
 
     .flatpickr-calendar.animate.open {
         height: 31vw;
+        width: 23.5vw;
     }
+
 
 }
 
 @media all and (max-width:375px) {
     .flatpickr-months .flatpickr-month {
-        height: 6.5vw;
+        height: 5.5vw;
     }
+
 
     .flatpickr-months .flatpickr-prev-month,
     .flatpickr-months .flatpickr-next-month {
@@ -76,4 +99,16 @@
     .flatpickr-months .flatpickr-month {
         height: 7.5vw;
     }
+
+    .flatpickr-months .flatpickr-prev-month,
+    .flatpickr-months .flatpickr-next-month {
+        top: 3.6vw;
+    }
+
+    .flatpickr-current-month {
+        padding: 0;
+    }
+    .flatpickr-calendar.animate.open {
+height: 31vw;
+}
 }
