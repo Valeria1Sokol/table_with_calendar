@@ -1,0 +1,462 @@
+@media all and (max-width:1024px) {
+    .searchBox {
+        width: 56%;
+    }
+
+    .searchBtn {
+        margin: 0 0 0 -4vw;
+    }
+
+    .box input[type=search] {
+        width: 21.1vw;
+        height: 3.13vw;
+    }
+
+    .box .btnBox {
+        height: 2.6vw;
+    }
+
+    .menu li .title {
+        line-height: 2.25vw;
+    }
+
+    input,
+    select {
+        border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .prijs p {
+        border-left: 1px solid rgba(0, 0, 0, 0.08);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .close {
+        font-size: 1rem;
+    }
+
+    .tickets {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        border-left: 1px solid rgba(0, 0, 0, 0.08);
+        border-right: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+}
+
+@media all and (max-width:768px) {
+    .contentBox {
+        background: linear-gradient(90deg, #193E58 27%, #F5F5F5 27%);
+    }
+
+    .dashboard {
+        width: 27%;
+        padding: 4.83vw 0;
+    }
+
+    .menu li a.logo {
+        font-size: 2.3vw;
+        line-height: 2.3vw;
+        letter-spacing: 1.5px;
+    }
+
+    .content {
+        width: 73%;
+        padding: 3.05vw 2vw 3.05vw 2vw;
+    }
+
+    .menu li .title,
+    .subMenu li a {
+        font-size: 2.6vw;
+    }
+
+    .title p {
+        width: 3.41vw;
+        margin: 0 1.53vw 0 0;
+    }
+
+    .menu li,
+    .menu .hasSub div {
+        padding: 3vw 1.3vw;
+    }
+
+    .menu li .title {
+        line-height: 4.25vw;
+    }
+
+    .fa-caret-down:before {
+        font-size: 2.4vw;
+        position: relative;
+        top: -1px;
+    }
+
+    .subMenu li:first-of-type,
+    .subMenu li {
+        padding: 3vw 0vw 3vw 6.4vw;
+    }
+
+    .boxWelcome {
+        padding: 1.58vw 2.66vw 1.58vw 2.3vw;
+    }
+
+    .boxWelcome .tittle {
+        font-size: 2.4vw;
+        letter-spacing: 0.4px;
+    }
+
+    .boxWelcome .name {
+        font-size: 2.3vw;
+    }
+
+    .boxWelcome .notification img {
+        width: 2.84vw;
+    }
+
+    .boxWelcome .notification .text {
+        width: 2.5vw;
+        height: 2.5vw;
+        font-size: 2.1vw;
+        line-height: 1.7vw;
+        padding: 0.5vw 0 0 0.3vw;
+    }
+
+    .boxWelcome .userBox .user {
+        width: 4.5vw;
+        margin-right: 1.05vw;
+    }
+
+    .boxWelcome .userBox .arrow {
+        width: 1.2vw;
+    }
+
+    .popup .popuptext li {
+        height: 6vw;
+    }
+
+    .popup .popuptext {
+        font-size: 2vw;
+    }
+
+    .searchBox .popuptext {
+        width: 38.1vw;
+        right: 0;
+        left: 1.6vw;
+        margin: 0;
+        top: 85%;
+    }
+
+    .notification .popuptext {
+        width: 22.44vw;
+    }
+
+    .popup .popuptext::before {
+        top: -0.5vw;
+        left: 81.9%;
+    }
+
+    .userBox .popuptext {
+        width: 22.8vw;
+        right: -38%;
+    }
+
+    .yellowBtn {
+        width: 13vw;
+        font-size: 1.2vw;
+        height: 4vw;
+    }
+
+    .box .btnBox {
+        height: 7.13vw;
+        margin-left: 0;
+    }
+
+    .box input[type=search] {
+        width: 30.1vw;
+        height: 7.13vw;
+        font-size: 2vw;
+    }
+
+
+    .tableTickets .rowHead {
+        font-size: 1.5vw;
+        border-radius: 0.64vw 0.64vw 0 0;
+        height: 4.4vw;
+    }
+
+    .tableTickets .rowHead .column1 {
+        padding: 0 0 0 2.83vw;
+    }
+
+
+    .tableTickets {
+        width: 100%;
+    }
+
+    .tableTickets .row {
+        height: 5.2vw;
+        width: 155%;
+        font-size: 1.5vw;
+    }
+
+    .column5 {
+        width: 32.1vw;
+    }
+
+    .column4 {
+        width: 19.4vw;
+        padding: 6px 0;
+        padding-left: 2vw;
+    }
+
+    .column2 {
+        width: 10.8vw;
+    }
+
+    .column3 {
+        width: 9.8vw;
+    }
+
+    .column7 {
+        width: 8vw;
+    }
+
+    .column8 {
+        width: 6.7vw;
+    }
+
+    .column8 img {
+        width: 1vw;
+        height: 1.1vw;
+    }
+
+    .blueBtn {
+        width: 11.8vw;
+        height: 4vw;
+        font-size: 1.2vw;
+    }
+
+    .searchBox {
+        width: 100%;
+        padding-left: 0.5vw;
+        display: none;
+    }
+
+    .searchBox .searchBtn {
+        width: 11.65vw;
+        height: 7.6vw;
+        margin: 0 0 0 -6vw;
+        border-radius: 6vw;
+    }
+
+    .searchBox input[type=search] {
+        width: 100%;
+        height: 7.6vw;
+        border-radius: 8.3vw;
+        padding: 0 2vw;
+        font-size: 3vw;
+        margin: 3vw 0;
+    }
+
+    .searchBox input[type=search]::placeholder {
+        font-size: 3vw;
+    }
+
+    .mobile {
+        display: flex;
+        width: 100%;
+    }
+
+    .logo img {
+        margin: 0 1.2vw 0 0;
+        width: 4.14vw;
+    }
+
+    .tabsBox .tab {
+        width: 16.3vw;
+        height: 4.1vw;
+        font-size: 1.5vw;
+    }
+
+    .tabsBox .tabsLine:first-of-type .tab {
+        width: 14.4vw;
+    }
+
+    .tabsBox {
+        width: 100%;
+    }
+
+    .tabsBox .tabsLine:last-of-type {
+        width: auto;
+    }
+
+    .scroll {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+    }
+
+
+    .tickets .rowHead {
+        font-size: 1.5vw;
+        height: 4.4vw;
+        border-radius: 0.64vw 0.64vw 0 0;
+    }
+
+    .tickets .content {
+        font-size: 1.4vw;
+        padding: 0vw 2vw 2vw;
+        border-radius: 0 0 0.64vw 0.64vw;
+    }
+
+    .tickets {
+        border-radius: 0.64vw;
+    }
+
+    input,
+    select,
+    .prijs p,.form-control {
+        height: 4.6vw;
+    }
+
+    .tickets .longLine {
+        width: 53.1vw;
+    }
+
+    .tickets .shortLine {
+        width: 9.3vw;
+    }
+
+    .tickets .longDate,
+    .tickets select,
+    .tickets .prijs,
+    .tickets .minMax,.form-control {
+        width: 20.4vw;
+    }
+
+    .tickets .prijs input {
+        width: 15.8vw;
+    }
+
+    .prijs p {
+        width: 4.6vw;
+        font-size: 1.4vw;
+    }
+
+    .tickets .shortDate {
+        width: 20.4vw;
+    }
+
+    .tickets .middle {
+        width: 42.4vw;
+    }
+
+    label {
+        margin-top: 2vw;
+    }
+
+    .tickets textarea {
+        width: 64.4vw;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .tickets .line .settingsBox {
+        width: 69%;
+    }
+
+    .tickets .line .settingsBox p {
+        font-size: 1.1vw;
+    }
+
+    .tickets input[type="checkbox"] {
+        width: 4.4vw;
+        height: 2vw;
+        border-radius: 3.7vw;
+    }
+
+    .tickets input:checked[type="checkbox"]:before {
+        left: 3.15vw;
+    }
+
+    .tickets input[type="checkbox"]:before {
+        width: 2vw;
+        height: 2vw;
+    }
+
+    .modalBox .rowHead {
+        font-size: 1.4vw;
+        height: 4vw;
+    }
+
+    .modalBox .content {
+        padding: 0 2.87vw 1.8vw 2.24vw;
+    }
+
+    .modalBox .content {
+        font-size: 1.4vw;
+        padding: 0vw 2vw 2vw;
+        border-radius: 0 0 0.64vw 0.64vw;
+    }
+
+    .modalBox .middleText {
+        width: 27.6vw;
+    }
+
+    .modalBox .prijs {
+        width: 18.4vw;
+    }
+
+    .modalBox .prijs input {
+        width: 14vw;
+    }
+
+    .modalBox .longDate .form-control {
+        width: 20vw;
+        background-size: 7%;
+    }
+
+    .modalBox .shortText {
+        width: 7.6vw;
+        text-align: center;
+    }
+
+    .modalBox .shortDate .form-control{
+        width: 13.4vw;
+    }
+
+    .modalBox select {
+        width: 16vw;
+        background-size: 6%;
+        background-position: 90% center;
+    }
+
+    .modalBox .btn {
+        width: 11.8vw;
+        height: 4vw;
+        font-size: 1.2vw;
+    }
+
+    .scroll::-webkit-scrollbar {
+        width: 0;
+    }
+
+
+}
+
+@media all and (max-width:425px) {
+    .btn {
+        letter-spacing: 1px;
+    }
+
+    .yellowBtn span {
+        margin: 0 0.94vw 0.5vw 0;
+    }
+    .modal-dialog {
+    max-width: 75%;
+    margin: 1.75rem auto;
+}
+}
+
+@media all and (max-width:360px) {
+    .fa-caret-down:before {
+        top: -2px;
+    }
+}
