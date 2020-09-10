@@ -144,6 +144,7 @@ span.flatpickr-weekday:nth-of-type(7) {
     padding: 0 1.05vw;
     border-radius: 0.2vw;
     border: 2px solid rgba(0, 0, 0, 0.08);
+    font-size: 0.84vw;
 }
 .longDate .form-control {
     width: 11.4vw;
@@ -281,6 +282,7 @@ span.flatpickr-weekday:nth-of-type(7) {
     .form-control {
         
         height: 4.6vw;
+        font-size: 1.4vw;
     }
     .longDate .form-control {
    width: 20.4vw;
