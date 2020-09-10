@@ -441,6 +441,10 @@ body {
     cursor: pointer;
 }
 
+.tabsBox .tabsLine:last-of-type .tab {
+    font-size: 0.84vw;
+}
+
 .tabsBox .tabsLine:first-of-type .tab {
     width: 10.4vw;
     border-right: 1px solid rgba(0, 0, 0, 0.08);
@@ -506,6 +510,7 @@ body {
     color: #4D4D4D;
     font-weight: 500;
     border-radius: 0 0 0.32vw 0.32vw;
+    padding: 1.4vw 1.8vw 1.05vw;
 }
 
 .tickets .line {
@@ -553,7 +558,7 @@ select {
 }
 
 .tickets .longLine {
-    width: 29.1vw;
+    width: 30.2vw;
 }
 
 .tickets .shortLine {
@@ -565,6 +570,7 @@ select {
     background: #fff url(../img/calendar.png) 87% 50% no-repeat;
     background-size: 10%;
 }
+
 
 [type="date"]::-webkit-inner-spin-button {
     display: none;
@@ -599,10 +605,12 @@ select {
 
 .tickets .prijs input {
     width: 8.8vw;
+    border-radius: 0 0.2vw 0.2vw 0;
 }
 
 .tickets .admin input {
     width: 6.5vw;
+    border-radius: 0 0.2vw 0.2vw 0;
 }
 
 .prijs input::placeholder {
@@ -615,6 +623,7 @@ select {
     border-left: 2px solid rgba(0, 0, 0, 0.08);
     border-bottom: 2px solid rgba(0, 0, 0, 0.08);
     border-top: 2px solid rgba(0, 0, 0, 0.08);
+    border-radius: 0.2vw 0 0 0.2vw;
     background-color: #FAFAFA;
     display: flex;
     justify-content: center;
@@ -674,6 +683,7 @@ input:placeholder {
     margin: 0.2vw 0 1.5vw;
     padding: 0;
     border: none;
+    cursor: pointer;
 }
 
 .tickets input:checked[type="checkbox"] {
@@ -948,8 +958,9 @@ select option {
     font-size: 0.84vw;
     color: #4D4D4D;
     font-weight: 500;
-    padding: 1.8vw 2.87vw 1.8vw 2.24vw;
+    padding: 1.8vw 1.8vw;
     align-items: flex-end;
+    border-radius: 0.32vw;
 }
 
 .modalBox .line {
@@ -975,21 +986,27 @@ select option {
 }
 
 .modalBox .longText {
-    width: 31.5vw;
+    width: 31.4vw;
 }
 
 .modalBox .shortText {
     width: 4.6vw;
+    text-align: center;
 }
 
 .modalBox .longDate .form-control {
-    width: 18vw;
+    width: 16.5vw;
     background: #fff url(../img/calendar.png) 93% 50% no-repeat;
     background-size: 6%;
 }
+.modalBox .longDate2 .form-control
+{
+    width: 17.5vw;
+    background-size: 5%;
+}
 
 .modalBox .shortDate .form-control {
-    width: 9.4vw;
+    width: 9.5vw;
 }
 
 .modalBox select {
@@ -1006,6 +1023,8 @@ select option {
     width: 100%;
     height: 9.1vw;
     padding: 0.79vw 1.05vw;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    border-radius: 0.2vw;
 }
 
 .modalBox .min {
@@ -1051,17 +1070,23 @@ select option {
 .modal {
     border: none;
 }
+.modal-content
+{
+    border: none;
+    border-radius: 0.32vw;
+}
 
 .modalBox .middleText {
-    width: 15.6vw;
+    width: 16.5vw;
 }
 
 .modalBox .prijs {
-    width: 9.4vw;
+    width: 9.5vw;
 }
 
 .modalBox .prijs input {
-    width: 7vw;
+    width: 7.1vw;
+    border-radius: 0 0.2vw 0.2vw 0;
 }
 
 .modalBox .admin {

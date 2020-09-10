@@ -275,6 +275,9 @@
         height: 4.1vw;
         font-size: 1.5vw;
     }
+    .tabsBox .tabsLine:last-of-type .tab {
+        font-size: 1.3vw;
+    }
 
     .tabsBox .tabsLine:first-of-type .tab {
         width: 14.4vw;
@@ -452,6 +455,19 @@
     .modal-dialog {
     max-width: 75%;
     margin: 1.75rem auto;
+}
+    .modalBox .middleText {
+    width: 32.6vw;
+}
+    .modalBox .longText {
+    width: 34.5vw;
+}
+    .modalBox .shortText {
+    width: 9.6vw;
+    text-align: center;
+}
+    .modalBox select {
+    width: 18vw;
 }
 }
 

@@ -67,7 +67,7 @@
 
 @media all and (max-width:375px) {
     .flatpickr-months .flatpickr-month {
-        height: 5.5vw;
+        height: 6.5vw;
     }
 
 
@@ -96,10 +96,7 @@
 }
 
 @media (max-width: 320px) {
-    .flatpickr-months .flatpickr-month {
-        height: 7.5vw;
-    }
-
+   
     .flatpickr-months .flatpickr-prev-month,
     .flatpickr-months .flatpickr-next-month {
         top: 3.6vw;
@@ -111,4 +108,8 @@
     .flatpickr-calendar.animate.open {
 height: 31vw;
 }
+    .flatpickr-months .flatpickr-month {
+        height: 5.5vw;
+    }
+
 }

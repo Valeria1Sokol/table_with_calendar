@@ -563,9 +563,9 @@
         return dst;
     }
 
-    function isRectEqual(rect1, rect2) {
-        return Math.round(rect1.top) === Math.round(rect2.top) && Math.round(rect1.left) === Math.round(rect2.left) && Math.round(rect1.height) === Math.round(rect2.height) && Math.round(rect1.width) === Math.round(rect2.width);
-    }
+//    function isRectEqual(rect1, rect2) {
+//        return Math.round(rect1.top) === Math.round(rect2.top) && Math.round(rect1.left) === Math.round(rect2.left) && Math.round(rect1.height) === Math.round(rect2.height) && Math.round(rect1.width) === Math.round(rect2.width);
+//    }
 
     var _throttleTimeout;
 
@@ -696,26 +696,28 @@
 
                     target.toRect = toRect;
 
-                    if (target.thisAnimationDuration) {
-                        // Could also check if animatingRect is between fromRect and toRect
-                        if (isRectEqual(prevFromRect, toRect) && !isRectEqual(fromRect, toRect) && // Make sure animatingRect is on line between toRect & fromRect
-                            (animatingRect.top - toRect.top) / (animatingRect.left - toRect.left) === (fromRect.top - toRect.top) / (fromRect.left - toRect.left)) {
-                            // If returning to same place as started from animation and on same axis
-                            time = calculateRealTime(animatingRect, prevFromRect, prevToRect, _this.options);
-                        }
-                    } // if fromRect != toRect: animate
+//                    if (target.thisAnimationDuration) {
+//                        // Could also check if animatingRect is between fromRect and toRect
+//                        if (isRectEqual(prevFromRect, toRect) && !isRectEqual(fromRect, toRect) && // Make sure animatingRect is on line between toRect & fromRect
+//                            (animatingRect.top - toRect.top) / (animatingRect.left - toRect.left) === (fromRect.top - toRect.top) / (fromRect.left - toRect.left)) {
+//                            // If returning to same place as started from animation and on same axis
+//                            time = calculateRealTime(animatingRect, prevFromRect, prevToRect, _this.options);
+//                        }
+//                    } 
+                    
+                    // if fromRect != toRect: animate
 
 
-                    if (!isRectEqual(toRect, fromRect)) {
-                        target.prevFromRect = fromRect;
-                        target.prevToRect = toRect;
-
-                        if (!time) {
-                            time = _this.options.animation;
-                        }
-
-                        _this.animate(target, animatingRect, toRect, time);
-                    }
+//                    if (!isRectEqual(toRect, fromRect)) {
+//                        target.prevFromRect = fromRect;
+//                        target.prevToRect = toRect;
+//
+//                        if (!time) {
+//                            time = _this.options.animation;
+//                        }
+//
+//                        _this.animate(target, animatingRect, toRect, time);
+//                    }
 
                     if (time) {
                         animating = true;

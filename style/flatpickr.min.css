@@ -294,7 +294,7 @@
 }
 
 .numInputWrapper span:hover {
-/*    background: rgba(0, 0, 0, 0.1)*/
+    /*    background: rgba(0, 0, 0, 0.1)*/
 }
 
 .numInputWrapper span:active {
@@ -320,7 +320,7 @@
 }
 
 .numInputWrapper span.arrowDown {
-/*    top: 50%*/
+    /*    top: 50%*/
 }
 
 .numInputWrapper span.arrowDown:after {
@@ -455,7 +455,7 @@
 }
 
 .flatpickr-current-month .flatpickr-monthDropdown-months:hover {
-/*    background: rgba(0, 0, 0, 0.05)*/
+    /*    background: rgba(0, 0, 0, 0.05)*/
 }
 
 .flatpickr-current-month .flatpickr-monthDropdown-months .flatpickr-monthDropdown-month {
@@ -477,7 +477,8 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 28px
+    height: 28px;
+    padding: 1vw 0 0.7vw;
 }
 
 .flatpickr-weekdays .flatpickr-weekdaycontainer {
@@ -569,21 +570,22 @@ span.flatpickr-weekday {
     color: #393939;
     cursor: pointer;
     font-weight: 400;
-/*    width: 14.2857143%;*/
+    /*    width: 14.2857143%;*/
     -webkit-flex-basis: 14.2857143%;
     -ms-flex-preferred-size: 14.2857143%;
-    flex-basis: 11%;
-/*    max-width: 39px;*/
-/*    height: 39px;*/
-/*    line-height: 39px;*/
+    flex-basis: 12%;
+    /*    max-width: 39px;*/
+    /*    height: 39px;*/
+    /*    line-height: 39px;*/
     margin: 0;
-    display: inline-block;
+   display: flex;
     position: relative;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    text-align: center
+    align-items: center;
+    text-align: center;
 }
 
 .flatpickr-day.inRange,
@@ -637,7 +639,7 @@ span.flatpickr-weekday {
     -webkit-box-shadow: none;
     box-shadow: none;
     color: #fff;
-/*    border-color: #569ff7*/
+    /*    border-color: #569ff7*/
 }
 
 .flatpickr-day.selected.startRange,
@@ -786,7 +788,7 @@ span.flatpickr-weekday {
 }
 
 .flatpickr-time .numInputWrapper span.arrowDown:after {
-    border-top-color: #393939
+    border-top-color: transparent;
 }
 
 .flatpickr-time.hasSeconds .numInputWrapper {
@@ -861,7 +863,7 @@ span.flatpickr-weekday {
 .flatpickr-time .flatpickr-am-pm:hover,
 .flatpickr-time input:focus,
 .flatpickr-time .flatpickr-am-pm:focus {
-    background: #eee
+/*    background: #eee*/
 }
 
 .flatpickr-input[readonly] {

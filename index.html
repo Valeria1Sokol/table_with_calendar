@@ -9,19 +9,19 @@
 <link rel="stylesheet" href="style/flatpickr.min.css">
 
 <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">-->
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <link rel="stylesheet" href="style/calendar.css">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script src=is.min.js></script>
- <script>
-        var link = document.createElement('link');
-        link.rel = "stylesheet";
-        if (is.safari()) {
-            link.href = "style/safari.css";
-        }
-        document.head.appendChild(link);
+<script>
+    var link = document.createElement('link');
+    link.rel = "stylesheet";
+    if (is.safari()) {
+        link.href = "style/safari.css";
+    }
+    document.head.appendChild(link);
+</script>
 
-    </script>
-<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
 
 <title>Document</title>
@@ -210,8 +210,7 @@
 
                         <div>
                             <label></label>
-
-                            <input type="text" placeholder="15:25" class="shortLine">
+                            <input type="text" class="time shortLine" placeholder="" data-input>
                         </div>
                         <div class="longDate">
                             <label>Verkoop tot</label>
@@ -219,7 +218,7 @@
                         </div>
                         <div>
                             <label></label>
-                            <input type="text" placeholder="15:25" class="shortLine">
+                            <input type="text" class="time shortLine" placeholder="" data-input>
                         </div>
                         <div>
                             <label>E-ticket template</label>
@@ -240,15 +239,15 @@
                         </div>
                         <div>
                             <label></label>
-                            <input type="text" placeholder="15:25" class="shortLine">
+                            <input type="text" class="time shortLine" placeholder="" data-input>
                         </div>
                         <div class="longDate">
                             <label>Ticket geldig tot</label>
-                             <input type="text" class="calendar" placeholder="" data-input>
+                            <input type="text" class="calendar" placeholder="" data-input>
                         </div>
                         <div>
                             <label></label>
-                            <input type="text" placeholder="15:25" class="shortLine">
+                            <input type="text" class="time shortLine" placeholder="" data-input>
                         </div>
                         <div>
                             <label>Tickets per bestelling</label>
@@ -527,11 +526,11 @@
                                 <div class="line">
                                     <div class="shortDate">
                                         <label>Verkoop vanaf</label>
-                                         <input type="text" class="calendar" placeholder="" data-input>
+                                        <input type="text" class="calendar" placeholder="" data-input>
                                     </div>
                                     <div>
                                         <label></label>
-                                        <input type="text" placeholder="15:25" class="shortText">
+                                        <input type="text" class="time shortText" placeholder="" data-input>
                                     </div>
                                     <div>
                                         <label>Status</label>
@@ -551,11 +550,11 @@
                                 <div class="line">
                                     <div class="shortDate">
                                         <label>Verkoop tot</label>
-                                         <input type="text" class="calendar" placeholder="" data-input>
+                                        <input type="text" class="calendar" placeholder="" data-input>
                                     </div>
                                     <div>
                                         <label></label>
-                                        <input type="text" placeholder="15:25" class="shortText">
+                                        <input type="text" class="time shortText" placeholder="" data-input>
                                     </div>
                                     <div>
                                         <label>E-Ticket template</label>
@@ -575,19 +574,19 @@
                                 <div class="line">
                                     <div class="longDate">
                                         <label>Geldig vanaf</label>
-                                         <input type="text" class="calendar" placeholder="" data-input>
+                                        <input type="text" class="calendar" placeholder="" data-input>
                                     </div>
                                     <div>
                                         <label></label>
-                                        <input type="text" placeholder="15:25" class="shortText">
+                                        <input type="text" class="time shortText" placeholder="" data-input>
                                     </div>
-                                    <div class="longDate">
+                                    <div class="longDate longDate2">
                                         <label>Geldig tot</label>
-                                         <input type="text" class="calendar" placeholder="" data-input>
+                                        <input type="text" class="calendar" placeholder="" data-input>
                                     </div>
                                     <div>
                                         <label></label>
-                                        <input type="text" placeholder="15:25" class="shortText">
+                                         <input type="text" class="time shortText" placeholder="" data-input>
                                     </div>
                                 </div>
                                 <div class="line">
@@ -610,7 +609,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 
-   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
 
     <script src="script.js"></script>
@@ -622,17 +621,20 @@
         });
         var cal = flatpickr(".calendar", {
             mode: "single",
-                        altInput: true,
-            altFormat: "F j, Y",
-            dateFormat: "Y-m-d",
+            altInput: true,
+            altFormat: "j F, Y ",
+            dateFormat: "d-m-Y",
             locale: {
                 firstDayOfWeek: 1
             }
         });
-
+        var time = flatpickr(".time", {
+            enableTime: true,
+            noCalendar: true,
+            dateFormat: "H:i",
+            time_24hr: true
+        });
     </script>
 
 
-</body>
-
-</html>
+</body></html>
