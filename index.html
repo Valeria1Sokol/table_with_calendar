@@ -175,57 +175,64 @@
                             <label>Ticket naam</label>
                             <input type="text" class="longLine" placeholder="Ticket naam...">
                         </div>
-                        <div>
-                            <label>Aantal</label>
-                            <input type="text" placeholder="125" class="shortLine">
-                        </div>
-                        <div>
-                            <label>Prijs</label>
-                            <div class="prijs">
-                                <p class="euro">€</p>
-                                <input type="text" placeholder="2,00">
+                        <div class="clm2">
+                            <div>
+                                <label>Aantal</label>
+                                <input type="text" placeholder="125" class="shortLine">
+                            </div>
+                            <div>
+                                <label>Prijs</label>
+                                <div class="prijs">
+                                    <p class="euro">€</p>
+                                    <input type="text" placeholder="2,00">
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <label>Status</label>
-                            <select>
-                                <option style="color: #808080">Online</option>
-                                <option>Offline</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label>Administratiekosten</label>
-                            <div class="admin prijs">
-                                <p class="euro">€</p>
-                                <input type="text" placeholder="2,00">
+                        <div class="clm3">
+                            <div>
+                                <label>Status</label>
+                                <select>
+                                    <option style="color: #808080">Online</option>
+                                    <option>Offline</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Administratiekosten</label>
+                                <div class="admin prijs">
+                                    <p class="euro">€</p>
+                                    <input type="text" placeholder="2,00">
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="line">
+                        <div class="clm1">
+                            <div style="position: relative;" class="shortDate">
+                                <label>Verkoop vanaf</label>
+                                <input type="text" class="calendar" placeholder="" data-input>
+                            </div>
 
-                        <div style="position: relative;" class="shortDate">
-                            <label>Verkoop vanaf</label>
-                            <input type="text" class="calendar" placeholder="" data-input>
+                            <div>
+                                <label></label>
+                                <input type="text" class="time shortLine" placeholder="" data-input>
+                            </div>
+                            <div class="longDate">
+                                <label>Verkoop tot</label>
+                                <input type="text" class="calendar" placeholder="" data-input>
+                            </div>
                         </div>
-
-                        <div>
-                            <label></label>
-                            <input type="text" class="time shortLine" placeholder="" data-input>
-                        </div>
-                        <div class="longDate">
-                            <label>Verkoop tot</label>
-                            <input type="text" class="calendar" placeholder="" data-input>
-                        </div>
-                        <div>
-                            <label></label>
-                            <input type="text" class="time shortLine" placeholder="" data-input>
-                        </div>
-                        <div>
-                            <label>E-ticket template</label>
-                            <select>
-                                <option>Template 1</option>
-                                <option>Template 1</option>
-                            </select>
+                        <div class="clm2">
+                            <div>
+                                <label></label>
+                                <input type="text" class="time shortLine" placeholder="" data-input>
+                            </div>
+                            <div>
+                                <label>E-ticket template</label>
+                                <select>
+                                    <option>Template 1</option>
+                                    <option>Template 1</option>
+                                </select>
+                            </div>
                         </div>
                         <div>
                             <label>Groepsnaam</label>
@@ -233,27 +240,31 @@
                         </div>
                     </div>
                     <div class="line">
-                        <div class="shortDate">
-                            <label>Ticket geldig vanaf</label>
-                            <input type="text" class="calendar" placeholder="" data-input>
+                        <div class="clm1">
+                            <div class="shortDate">
+                                <label>Ticket geldig vanaf</label>
+                                <input type="text" class="calendar" placeholder="" data-input>
+                            </div>
+                            <div>
+                                <label></label>
+                                <input type="text" class="time shortLine" placeholder="" data-input>
+                            </div>
+                            <div class="longDate">
+                                <label>Ticket geldig tot</label>
+                                <input type="text" class="calendar" placeholder="" data-input>
+                            </div>
                         </div>
-                        <div>
-                            <label></label>
-                            <input type="text" class="time shortLine" placeholder="" data-input>
-                        </div>
-                        <div class="longDate">
-                            <label>Ticket geldig tot</label>
-                            <input type="text" class="calendar" placeholder="" data-input>
-                        </div>
-                        <div>
-                            <label></label>
-                            <input type="text" class="time shortLine" placeholder="" data-input>
-                        </div>
-                        <div>
-                            <label>Tickets per bestelling</label>
-                            <div class="minMax">
-                                <input type="text" placeholder="min..." class="shortLine">
-                                <input type="text" placeholder="max..." class="shortLine">
+                        <div class="clm2">
+                            <div>
+                                <label></label>
+                                <input type="text" class="time shortLine" placeholder="" data-input>
+                            </div>
+                            <div>
+                                <label>Tickets per bestelling</label>
+                                <div class="minMax">
+                                    <input type="text" placeholder="min..." class="shortLine">
+                                    <input type="text" placeholder="max..." class="shortLine">
+                                </div>
                             </div>
                         </div>
                         <div>
@@ -507,6 +518,7 @@
                                     </div>
                                 </div>
                                 <div class="line">
+
                                     <div>
                                         <label>Prijs</label>
                                         <div class="prijs">
@@ -586,7 +598,7 @@
                                     </div>
                                     <div>
                                         <label></label>
-                                         <input type="text" class="time shortText" placeholder="" data-input>
+                                        <input type="text" class="time shortText" placeholder="" data-input>
                                     </div>
                                 </div>
                                 <div class="line">
@@ -619,15 +631,18 @@
             animation: 150,
             ghostClass: 'blue-background-class'
         });
+
+
         var cal = flatpickr(".calendar", {
             mode: "single",
             altInput: true,
-            altFormat: "j F, Y ",
-            dateFormat: "d-m-Y",
+            altFormat: "d F, Y ",
+            dateFormat: "d-m-y",
             locale: {
                 firstDayOfWeek: 1
             }
         });
+
         var time = flatpickr(".time", {
             enableTime: true,
             noCalendar: true,

@@ -275,6 +275,7 @@
         height: 4.1vw;
         font-size: 1.5vw;
     }
+
     .tabsBox .tabsLine:last-of-type .tab {
         font-size: 1.3vw;
     }
@@ -316,7 +317,8 @@
 
     input,
     select,
-    .prijs p,.form-control {
+    .prijs p,
+    .form-control {
         height: 4.6vw;
     }
 
@@ -331,7 +333,8 @@
     .tickets .longDate,
     .tickets select,
     .tickets .prijs,
-    .tickets .minMax,.form-control {
+    .tickets .minMax,
+    .form-control {
         width: 20.4vw;
     }
 
@@ -421,7 +424,7 @@
         text-align: center;
     }
 
-    .modalBox .shortDate .form-control{
+    .modalBox .shortDate .form-control {
         width: 13.4vw;
     }
 
@@ -441,6 +444,22 @@
         width: 0;
     }
 
+    .tickets .line .clm2 {
+        width: 26.1vw;
+        display: contents;
+    }
+
+    .tickets .line .clm3 {
+        width: 35.4vw;
+        display: contents;
+    }
+
+
+    .tickets .line .clm1 {
+        width: 51.7vw;
+        display: contents;
+    }
+
 
 }
 
@@ -452,23 +471,28 @@
     .yellowBtn span {
         margin: 0 0.94vw 0.5vw 0;
     }
+
     .modal-dialog {
-    max-width: 75%;
-    margin: 1.75rem auto;
-}
+        max-width: 75%;
+        margin: 1.75rem auto;
+    }
+
     .modalBox .middleText {
-    width: 32.6vw;
-}
+        width: 32.6vw;
+    }
+
     .modalBox .longText {
-    width: 34.5vw;
-}
+        width: 34.5vw;
+    }
+
     .modalBox .shortText {
-    width: 9.6vw;
-    text-align: center;
-}
+        width: 9.6vw;
+        text-align: center;
+    }
+
     .modalBox select {
-    width: 18vw;
-}
+        width: 18vw;
+    }
 }
 
 @media all and (max-width:360px) {
